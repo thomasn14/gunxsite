@@ -9,6 +9,9 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource-variable/dm-sans": "^5.2.8",
+    "@fontsource/bungee": "^5.2.7",
+    "@fontsource/jomolhari": "^5.2.8",
     "@fontsource/karla": "^5.2.8",
     "astro": "^5.14.1"
   }

@@ -1,22 +1,22 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import Button from "@components/Button.astro";
+import Layout from "@components/Layouts/Layout.astro";
+import Button from "@components/Buttons/Button.astro";
 // import {Image} from "@assets/Frisbee Site/GUNX Logo.png";
 import { Image } from "astro:assets";
-import GunxLogo from "@assets/Frisbee Site/GUNX Logo.png";
+import GunxLogo from "@assets/images/FrisbeePics/GUNX Logo.png";
 // eboard cards
-import GooseCard from "@assets/goose.webp";
-import ColeCard from "@assets/cole.webp";
-import MirsadCard from "@assets/mirsad.webp";
-import NickyCard from "@assets/nicky.webp";
-import EthanCard from "@assets/ethan.webp";
-import RoseCard from "@assets/rose.webp";
-import MayCard from "@assets/may.webp";
-import ShoshCard from "@assets/shosh.webp";
-import TeamPic from "@assets/Frisbee Site/TeamPic.jpg";
+import GooseCard from "@assets/images/FrsibeePics/goose.webp";
+import ColeCard from "@asset/images/FrsibeePics/cole.webp";
+import MirsadCard from "@assets/images/FrsibeePics/mirsad.webp";
+import NickyCard from "@assets/images/FrsibeePics/nicky.webp";
+import EthanCard from "@assets/images/FrsibeePics/ethan.webp";
+import RoseCard from "@assets/images/FrsibeePics/rose.webp";
+import MayCard from "@assets/images/FrsibeePics/may.webp";
+import ShoshCard from "@assets/images/FrsibeePics/shosh.webp";
+import TeamPic from "@assets/images/FrsibeePics/TeamPic.jpg";
 // eboard end
 import Dates from "@components/Dates.astro";
-import DatesTwo from "@components/Datestwo.astro";
+import DatesTwo from "/workspaces/gunxsite/src/components/DatesTwo.astro";
 export const pageTitle = "Frisbee Site";
 ---
 
@@ -146,6 +146,7 @@ export const pageTitle = "Frisbee Site";
         align-items:center;
         justify-content: center;
         flex-wrap:wrap;
+         font-family: 'DM Sans Variable', sans-serif;
       }
     h1{
       color: white;
