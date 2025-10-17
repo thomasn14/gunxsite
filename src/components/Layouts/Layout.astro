@@ -1,0 +1,19 @@
+---
+import StandardLayout from "./StandardLayout.astro";
+import CompactLayout from "./CompactLayout.astro";
+const { compact = false, title } = Astro.props;
+import '@fontsource/bungee';
+import '@fontsource/jomolhari';
+---
+
+{
+  compact ? (
+    <CompactLayout title={title}>
+      <slot />
+    </CompactLayout>
+  ) : (
+    <StandardLayout title={title}>
+      <slot />
+    </StandardLayout>
+  )
+}
