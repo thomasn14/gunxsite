@@ -1,17 +1,284 @@
 ---
-import Layout from "@layouts/Layout.astro";
-import SampleComponent from "@components/SampleComponent.astro";
-import Container from "@components/Container.astro";
-import AstroLogo from "@assets/images/astro-logo-light-gradient.png";
-import { Content as SampleMarkdown } from "@content/sample-markdown.md";
+import Layout from "../../layouts/Layout.astro";
+import Button from "@components/Button.astro";
+// import {Image} from "@assets/Frisbee Site/GUNX Logo.png";
 import { Image } from "astro:assets";
+import GunxLogo from "@assets/Frisbee Site/GUNX Logo.png";
+// eboard cards
+import GooseCard from "@assets/goose.webp";
+import ColeCard from "@assets/cole.webp";
+import MirsadCard from "@assets/mirsad.webp";
+import NickyCard from "@assets/nicky.webp";
+import EthanCard from "@assets/ethan.webp";
+import RoseCard from "@assets/rose.webp";
+import MayCard from "@assets/may.webp";
+import ShoshCard from "@assets/shosh.webp";
+import TeamPic from "@assets/Frisbee Site/TeamPic.jpg";
+// eboard end
+import Dates from "@components/Dates.astro";
+import DatesTwo from "@components/Datestwo.astro";
+export const pageTitle = "Frisbee Site";
 ---
 
-<Layout title="Astro Starter">
-  <Container>
-    <Image src={AstroLogo} alt="" />
-    <h1>a simple Astro Starter Kit</h1>
-    <SampleComponent text="This is a sample component!" />
-    <SampleMarkdown />
-  </Container>
+
+<Layout compact title={pageTitle}></Layout>
+<Image src={GunxLogo} alt="frisbee" class="GunxLogo"/>
+
+
+<h1>
+  GUNX Ultimate
+</h1>  
+<h3>  SUNY New Paltz Ultimate Frisbee</h3>
+
+
+  
+<header>
+      <nav>
+       
+        <div class="nav-items">
+          <a href="#whatfrisbee" id="1"class="nav-btn">What is Frisbee?</a>
+          <a href="#meetGUNX" class="nav-btn">Meet the GUNX</a>
+          <a href="#dates" class="nav-btn">Important Dates</a> 
+          <a href="#practice" class="nav-btn">Practice Times</a>
+          <a href="#contact" class="nav-btn">Contact</a>
+        </div>
+      </nav>
+    </header>  
+
+</div>
+<h2>
+      <hr style="border: .2px solid rgb(255, 255, 255); width: 50%;">
+        <p class="bungee">What is Frisbee?</p>
+        <a href="https://en.wikipedia.org/wiki/Ultimate_frisbee">Wikipedia Explanation</a>
+      <hr style="border: .2px solid rgb(255, 255, 255); width: 50%;">
+  <!-- get involved button -->
+  <Button href="" class="getinvolved"/> 
+
+    <section id="whatfrisbee">
+      
+     <p class="bungee">Who Are We?</p>
+     <div class="team-pic-wrap">
+        <Image src={TeamPic} alt="Team Photo" class="TeamPic"/>
+       <p class="whorwe">
+      New Paltz Gunx welcomes all students <br>
+      who would like to learn the game of Ultimate Frisbee.<br>
+      We take all players no matter what experience they have, <br>
+      and teach/train them to be better players. Ultimate Frisbee is a <br>
+      great way to stay in shape and make friends.<br>
+      We accept all genders so if you are looking for a fun, athletic <br>
+      extracurricular this is the one to join!
+       </p>
+     </div>
+  </section>
+
+  <section id="meetGUNX" class="meet">
+          <hr style="border: .2px solid rgb(255, 255, 255); width: 50%;">
+            <p class="bungee">Meet the GUNX</p>
+          <hr style="border: .2px solid rgb(255, 255, 255); width: 50%;">
+            <!-- eboard cards -->
+        <Image src={GooseCard} alt="Goose Mascot" class="eboardCard"/>
+        <Image src={ColeCard} alt="Cole Enslen President" class="eboardCard"/>
+        <Image src={MirsadCard} alt="Mirsad" class="eboardCard"/>
+        <Image src={EthanCard} alt="Ethan Gravel Social Media Manager" class="eboardCard"/>
+        <Image src={NickyCard} alt="Nicky Thomas Captain" class="eboardCard"/>
+        <Image src={RoseCard} alt="Rose Bromage Spirit Captain" class="eboardCard"/>
+        <Image src={MayCard} alt="May Hornbuckle Secretary" class="eboardCard"/>
+        <Image src={ShoshCard} alt="Shoshana Shapiro Treasurer" class="eboardCard"/>
+
+<!-- card end-->
+  </section>
+
+  <section id="dates">
+    <hr style="border: .2px solid rgb(255, 255, 255); width: 50%;">
+     <p class="bungee">Important Dates</p>
+     <hr style="border: .2px solid rgb(255, 255, 255); width: 50%;">
+     <Dates> </Dates>
+     <DatesTwo> </DatesTwo>
+   </section>
+
+  <section id="practice">
+    <hr style="border: .2px solid rgb(255, 255, 255); width: 50%;">
+     <p class="bungee">Practice Times</p>
+    <hr style="border: .2px solid rgb(255, 255, 255); width: 50%;">
+   </section>
+
+  <section id="contact">
+    <hr style="border: .2px solid rgb(255, 255, 255); width: 50%;">
+     <p class="bungee">Contact</p>
+    <hr style="border: .2px solid rgb(255, 255, 255); width: 50%;">    
+    <div class="footer">
+       
+        <Image src={GunxLogo} alt="Gunx Logo" class="footerimg"/>
+      
+        <p>
+          President:Cole Enslen<br>
+          Email:ultimate.paltz@gmail.com<br>
+          <a href="https://www.instagram.com/npultimate/" class="insta">GUNX Instagram</a>
+        </p>
+
+    </div>    
+   </section>
+ 
+   
+  
+</h2>
+  </Frame>
 </Layout>
+
+
+
+
+
+
+
+
+<style>
+    .page-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+  }
+    body {
+        background-color: black;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content: center;
+        flex-wrap:wrap;
+      }
+    h1{
+      color: white;
+     
+      display:flex;
+      justify-content: center;
+      font-family: 'Jomolhari', serif;
+    
+    }
+
+
+        h3{
+      color: white;
+      display:flex;
+      justify-content: center;
+      font-family: 'Jomolhari', serif;
+      padding-bottom: 1rem;;
+    }
+
+/* nav buttons */
+    .nav-items{
+      display:flex;
+      flex-wrap: wrap;
+      justify-content:center;
+      gap:1rem;
+      
+     
+    }
+    
+    a.nav-btn{
+        color:rgb(199, 106, 0);
+        text-decoration:none;
+        padding: .2rem;
+        background-color: transparent;
+        border: 1.5px solid rgb(199, 106, 0);
+        border-radius: 3px;
+        display:block;
+    }
+    
+    a.nav-btn:hover{
+        background-color: rgb(199, 106, 0);
+        color:white
+    }
+ /* nav buttons */
+    .getinvolved{
+      display: flex;
+      justify-content: center;
+      
+    }
+    p{
+      color:white;
+    }
+
+    /* eboard card */
+
+   .meet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+
+   }
+
+    img.eboardCard{
+     
+      display:flex;
+      justify-content: center;
+      padding:0%;
+      max-width:470px;
+      
+     
+    }
+ 
+
+/* all h3 text */
+    .bungee{
+      font-family: 'Bungee', system-ui;
+      font-weight: lighter;
+      display:flex;
+      justify-content: center;
+      text-align:center;
+      padding-bottom:1rem;
+      text-size:large;
+    }
+    #1{
+      padding-bottom:1rem;
+    }
+/* all h2 text */
+
+
+
+  /* team picture */
+    .TeamPic{
+      border-radius: 10px;
+      display:flex;
+      justify-content: center;
+      padding:.4rem;
+      
+    }
+    .whorwe{
+      font-weight:lighter;
+      text-align:center;
+      font-size: medium;
+    }
+
+    .contact{
+      background-color: rgb(81, 80, 80);
+      
+    }
+    .footerimg{
+      width:25%;
+      height:25%;
+    }
+    .footer p{
+     font-size: small;
+     font-weight:lighter;
+     padding-left: .5rem;
+    }
+    .footer{
+      display:flex;
+      justify-content: center;
+      flex-direction:row;
+    
+    }
+         hr{
+          display:flex;
+          flex-wrap: wrap;
+         } 
+    h2 a{
+      display:flex;
+      justify-content: center;
+      color: white;
+      font-size:large;
+      padding-bottom:1rem;
+    }
+</style>
