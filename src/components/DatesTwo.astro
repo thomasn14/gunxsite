@@ -11,7 +11,7 @@ const {href}=Astro.props;
         <p>Oct 9th</p>
     </div>
      <div class="date-text">
-         Time: 9am-2pm  Location:<a href="https://maps.app.goo.gl/2tpwuK2FCLSrRd3A9">Marist Campus</a>
+         Time: 9am-2pm<br> Location:<a href="https://maps.app.goo.gl/2tpwuK2FCLSrRd3A9">Marist Campus</a>
     </div>
 </section>
 <style>
@@ -33,23 +33,34 @@ const {href}=Astro.props;
         border: 1.5px solid rgb(199, 106, 0);
         border-radius: 3px;
         color: rgb(199, 106, 0);
-        padding:2rem;
+        padding:2.5rem;
+        font-size:1rem;
     }
     .date-num{
         background-color: rgb(199, 106, 0);
         color:white;
-        padding: 1rem;
+        padding: .5rem;
         border-radius: 5px;
         display:flex;
         flex-direction: column;
         align-items: center; 
     }
     h2{
-        font-size:3.5rem;
+        font-size:2.5rem;
         margin:.5rem;
     }
-    p {
-        
+     .date-num p {
+        font-size:.8rem;
+    }
+        a {
+        color: rgb(199, 106, 0);
+        text-decoration: underline;
+        text-decoration-color:white;
+    }
+    a:hover{
+        text-decoration:none;
+        color:white;
+        text-decoration-color: rgb(199, 106, 0); 
     }
 
 </style>

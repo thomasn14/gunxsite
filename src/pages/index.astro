@@ -3,20 +3,21 @@ import Layout from "@components/Layouts/Layout.astro";
 import Button from "@components/Buttons/Button.astro";
 // import {Image} from "@assets/Frisbee Site/GUNX Logo.png";
 import { Image } from "astro:assets";
-import GunxLogo from "@assets/images/FrisbeePics/GUNX Logo.png";
+import GunxLogo from "@assets/images/FrisbeePics/GUNX_Logo.png";
 // eboard cards
-import GooseCard from "@assets/images/FrsibeePics/goose.webp";
-import ColeCard from "@asset/images/FrsibeePics/cole.webp";
-import MirsadCard from "@assets/images/FrsibeePics/mirsad.webp";
-import NickyCard from "@assets/images/FrsibeePics/nicky.webp";
-import EthanCard from "@assets/images/FrsibeePics/ethan.webp";
-import RoseCard from "@assets/images/FrsibeePics/rose.webp";
-import MayCard from "@assets/images/FrsibeePics/may.webp";
-import ShoshCard from "@assets/images/FrsibeePics/shosh.webp";
-import TeamPic from "@assets/images/FrsibeePics/TeamPic.jpg";
+import GooseCard from "@assets/images/FrisbeePics/goose.webp";
+import ColeCard from "@assets/images/FrisbeePics/cole.webp";
+import MirsadCard from "@assets/images/FrisbeePics/mirsad.webp";
+import NickyCard from "@assets/images/FrisbeePics/nicky.webp";
+import EthanCard from "@assets/images/FrisbeePics/ethan.webp";
+import RoseCard from "@assets/images/FrisbeePics/rose.webp";
+import MayCard from "@assets/images/FrisbeePics/may.webp";
+import ShoshCard from "@assets/images/FrisbeePics/shosh.webp";
+import TeamPic from "@assets/images/FrisbeePics/TeamPic.jpg";
 // eboard end
 import Dates from "@components/Dates.astro";
 import DatesTwo from "/workspaces/gunxsite/src/components/DatesTwo.astro";
+import Practice from "@components/Practice.astro";
 export const pageTitle = "Frisbee Site";
 ---
 
@@ -96,10 +97,14 @@ export const pageTitle = "Frisbee Site";
      <DatesTwo> </DatesTwo>
    </section>
 
+
   <section id="practice">
     <hr style="border: .2px solid rgb(255, 255, 255); width: 50%;">
      <p class="bungee">Practice Times</p>
     <hr style="border: .2px solid rgb(255, 255, 255); width: 50%;">
+
+    <Practice> </Practice>
+   </section>
    </section>
 
   <section id="contact">
@@ -111,8 +116,8 @@ export const pageTitle = "Frisbee Site";
         <Image src={GunxLogo} alt="Gunx Logo" class="footerimg"/>
       
         <p>
-          President:Cole Enslen<br>
-          Email:ultimate.paltz@gmail.com<br>
+          President: Cole Enslen<br>
+          Email: ultimate.paltz@gmail.com<br>
           <a href="https://www.instagram.com/npultimate/" class="insta">GUNX Instagram</a>
         </p>
 
@@ -133,11 +138,12 @@ export const pageTitle = "Frisbee Site";
 
 
 <style>
+ 
     .page-container{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        width:100vw;
   }
     body {
         background-color: black;
@@ -216,6 +222,7 @@ export const pageTitle = "Frisbee Site";
       justify-content: center;
       padding:0%;
       max-width:470px;
+      height:auto;
       
      
     }
@@ -228,7 +235,6 @@ export const pageTitle = "Frisbee Site";
       display:flex;
       justify-content: center;
       text-align:center;
-      padding-bottom:1rem;
       text-size:large;
     }
     #1{
@@ -244,6 +250,8 @@ export const pageTitle = "Frisbee Site";
       display:flex;
       justify-content: center;
       padding:.4rem;
+      width:100vw;
+      height:auto;
       
     }
     .whorwe{
@@ -281,5 +289,18 @@ export const pageTitle = "Frisbee Site";
       color: white;
       font-size:large;
       padding-bottom:1rem;
+    }
+    p .insta{
+        background-color: transparent;
+        border: 1.5px solid rgb(199, 106, 0);
+        border-radius: 3px;
+        color: rgb(199, 106, 0);
+        padding:.5rem;
+        font-size:1rem;
+        text-decoration:none;
+    }
+    p .insta:hover{
+        background-color: rgb(199, 106, 0);
+        color:white
     }
 </style>
