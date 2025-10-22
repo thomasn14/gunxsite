@@ -24,18 +24,12 @@ export const pageTitle = "Frisbee Site";
 
 <Layout compact title={pageTitle}></Layout>
 <Image src={GunxLogo} alt="frisbee" class="GunxLogo"/>
-
-
 <h1>
   GUNX Ultimate
 </h1>  
 <h3>  SUNY New Paltz Ultimate Frisbee</h3>
-
-
-  
 <header>
       <nav>
-       
         <div class="nav-items">
           <a href="#whatfrisbee" id="1"class="nav-btn">What is Frisbee?</a>
           <a href="#meetGUNX" class="nav-btn">Meet the GUNX</a>
@@ -160,6 +154,8 @@ export const pageTitle = "Frisbee Site";
       display:flex;
       justify-content: center;
       font-family: 'Jomolhari', serif;
+      padding:0px;
+      margin: 0px;
     
     }
 
@@ -169,7 +165,9 @@ export const pageTitle = "Frisbee Site";
       display:flex;
       justify-content: center;
       font-family: 'Jomolhari', serif;
-      padding-bottom: 1rem;;
+      padding:0px;
+      padding-bottom:1.2rem;
+      margin: 0px;
     }
 
 /* nav buttons */
@@ -303,4 +301,26 @@ export const pageTitle = "Frisbee Site";
         background-color: rgb(199, 106, 0);
         color:white
     }
+           h2 a {
+        color: rgb(199, 106, 0);
+        text-decoration: underline;
+        text-decoration-color:white;
+    }
+   h2 a:hover{
+        text-decoration:none;
+        color:white;
+        text-decoration-color: rgb(199, 106, 0); 
+    }
+
+
+    /* Media Media */    /* Media Media */      /* Media Media */
+
+
+
+     @media screen and (min-width: 666px){
+      .TeamPic{
+        width:60vw;
+      }
+
+     }
 </style>
